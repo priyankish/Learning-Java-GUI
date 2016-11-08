@@ -1,0 +1,40 @@
+#Basic event handling
+
+How do we get the button to do something
+specific when the user clicks it?
+
+We need two things:
+
+1) A method to be called when the user clicks. 
+
+Suppose, upon being clicked the button "Click Me!" to "You Clicked Me!"
+The method is: 
+
+public void changeIt() {
+button.setText("You Clicked Me!");
+}
+
+2) A way to know when to trigger that method.
+
+If the user clicks a button, that’s an event. If you care about a button's events,  implement an interface that says, 
+“I’m listening for your events.” A listener interface is the bridge between the listener (you) and event source (the button).
+When you implement a listener interface, you give the button a way to callyou back. The interface iswhere the call-back method is declared.
+The Swing GUI components are event sources. In Java terms, an event source is an object that can turn user actions (click a mouse etc.) 
+into events. An event is represented as an object of some class like ActionEvent, MouseEvent etc.
+
+An event source (like a button) creates an event object when the user does something that matters (like click the button).
+We write most of the code in the capacity of an event listener rather than an event source. Every event type has a matching listener 
+interface. If you want MouseEvents, implement the MouseListener interface. To implement an interface your class implements it, which means
+you must write implementation methods for every method in the interface. Some interfaces have more than one method like mousePressed(),
+mouseReleased() etc.
+
+If your class wants to know about a button’s ActionEvents, you implement the ActionListener interface. The button needs to
+know you’re interested, so youregister with the button by calling its addActionListener(this) and passing
+an ActionListener reference to it (in this case, you are the ActionListener so you pass this).The button needs a
+way to call you back when the event happens, so it calls the method in the listener interface. As an ActionListener,
+you must implement the interface’s sole method, actionPerformed().
+
+When the button’s addActionListener() runs (because a potential listener invoked it), the button takes the parameter (a
+reference to the listener object) and stores it in a list. When the user clicks the button, the button ‘fires’ the event by calling 
+the actionPerformed()
+method on each listener in the list.
