@@ -1,7 +1,7 @@
 import javax.swing.*;
-import java.awt.event.*;
+import java.awt.event.*; //1
 
-public class SimpleGui1B implements ActionListener {
+public class SimpleGui1B implements ActionListener {  //2
 	JButton button;
 	public static void main(String[] args) {
 	SimpleGui1B gui = new SimpleGui1B();
@@ -10,13 +10,13 @@ public class SimpleGui1B implements ActionListener {
 public void go() {
 	JFrame frame = new JFrame();
 	button = new JButton("Click Me!");
-	button.addActionListener(this);
+	button.addActionListener(this);   //3
 	frame.getContentPane().add(button);
 	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	frame.setSize(300, 300);
 	frame.setVisible(true);
 }
-public void actionPerformed(ActionEvent event) {
-button.setText("You Clicked Me!");
+public void actionPerformed(ActionEvent event) {  //4
+button.setText("You Clicked Me!");  //5
 }
 }
