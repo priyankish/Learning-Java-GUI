@@ -5,6 +5,7 @@ For the course Object Oriented Programming, offered at BITS Pilani.
 
 
 Things to remember:
+
 1) Follow the order in which files have been given. 
 
 2) Do not gloss over the text portions. They are important.
@@ -14,4 +15,5 @@ Things to remember:
 
 
 Resources used: 
+
             Book: Head First Java
