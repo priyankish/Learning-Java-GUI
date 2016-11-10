@@ -13,8 +13,8 @@ public class SimpleGui {   //The main method implementation as seen earlier
 }
 class MyDrawPanel extends JPanel { /* Make a subclass of JPanel, a widget that you can add to a frame just like anything else.
                                    Except this one is your own customized widget. */
-	public void paintComponent(Graphics g){ /* Here is the important Graphics method. You never call it yourself. The system calls it and provides
-	                                           a drawing surface of type Graphics that you can paint on. */
+	public void paintComponent(Graphics g){ /* Here is the important Graphics method. You never call it yourself. The system calls it 
+	                                           and provides a drawing surface of type Graphics that you can paint on. */
 		g.setColor(Color.red);
 		g.fillRect(20, 50, 100, 100);  // g is like a painting machine. You tell it what shape to paint with what colour //
 }
