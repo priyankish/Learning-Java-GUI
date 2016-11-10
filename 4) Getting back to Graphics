@@ -1,0 +1,14 @@
+There are three ways to put things on your GUI:
+
+1. Putting widgets on a frame. 
+   Adding buttons, menus etc. frame.getContentPane().add(button);
+  
+2. Drawing 2D graphics on a widget
+   Using a Graphics object to paint shapes. graphics.fillOval(70, 70, 100, 100);
+   
+3. Putting a JPEG on a widget
+   Images can be put on a widget. graphics.drawImage(myPic,10,10,this);
+   
+ 
+
+   
