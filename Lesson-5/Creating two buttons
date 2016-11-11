@@ -1,0 +1,8 @@
+#Creating two buttons 
+
+We need four widgets now - a label, a label changing button, a circle and a button that changes the colour of the circle.
+
+And we need to get two events. Two get multiple events, we use the concept of inner classes inside a class which can use the outer class's
+variables and methods as if they were its own. We shall make two such classes for two action events. 
+
+The main GUI class won't implement ActionListener interface now.
