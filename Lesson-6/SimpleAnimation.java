@@ -30,3 +30,5 @@ g.fillOval(x,y,40,40);
 }
 } 
 } 
+
+//But this animation leaves a smear doesn't it?? To see how this smear is fixed, look at the Fixed animatiom file.
