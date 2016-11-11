@@ -1,0 +1,18 @@
+#Simple Animation 
+
+The steps in a simple animation are - 
+
+1)  Paint an object at a particular x and y coordinate
+       g.fillOval(20,50,100,100);
+       
+2) Repaint the object at a different x and y coordinate
+       g.fillOval(25,55,100,100);
+       
+3)Repeat the previous step with changing x and y values for as long as the animation is supposed to continue.
+
+
+What we really want is something like g.fillOval(x,y,100,100); where each time paintComponent() is called, the oval gets painted at a 
+different location.
+
+But where do we get the new x and y values from? And who calls the repaint() method?
+
