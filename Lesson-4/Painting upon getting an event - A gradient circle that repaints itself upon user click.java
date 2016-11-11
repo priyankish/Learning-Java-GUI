@@ -21,7 +21,7 @@ public void go(){
 		frame.setSize(300, 300);
 	}
 public void actionPerformed(ActionEvent event){
-	frame.repaint(); /* When the user clicks, the frame is told repaint() itself. That means paintComponent() is 
+	frame.repaint(); /* When the user clicks, the frame is told to repaint() itself. That means paintComponent() is 
 	                    called on every widget in the frame!*/
 }
 }
